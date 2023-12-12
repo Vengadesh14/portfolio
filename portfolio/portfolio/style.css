@@ -1,0 +1,154 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color:white;
+    color: black;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(,images/bkg.jpg);
+    background-size: cover;
+    background-position: right;
+
+    
+    
+}
+
+
+.container{
+    padding: 10px ;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#logo{
+    width: 600px;
+
+}
+.lo{
+    font-size: 30px;
+    font-weight: bold;
+    color: blue;
+    cursor: pointer;
+
+}
+.lo::first-letter{
+    font-size: 40px;
+    border: 2px solid blue;
+    border-right: transparent;
+    padding-left: 5px;
+    color: red;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 40px ;
+}
+nav ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    position: relative;
+    padding: 5px;
+    color:#0b0b0b;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color:deeppink;
+}
+nav ul li a::after{
+    content:" ";
+    bottom: 0;
+    left:0;
+    width: 0;
+    position:absolute;
+    height: 3px;
+    background: deeppink;
+    transition: .3s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.btn{
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    padding:10px 30px;
+    text-transform: uppercase;
+    background: deeppink;
+    border-radius: 500px;
+    display: inline-block;
+    font-weight: 500px;
+    transition: all.4s ease-in-out
+    border: 2px solid deeppink;
+
+}
+.btn:hover{
+    background: transparent;
+    color: deeppink;
+}
+.detail{
+    position:absolute;
+    top:35%;
+    left:8%;
+}
+.detail h1{
+    color: black;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 70px;
+}
+#text{
+    color:deeppink;
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 5px;
+    animation: typing 3.5s steps(30,end),blink-caret 0.5s step-end infinite;
+    
+
+}
+@keyframes typing {
+    from {
+        width:0;
+    } 
+    to {
+        width:100%;
+    }
+}
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+     50% {
+        border-color: orange;
+    } 
+}
+
+.detail p{
+    color: black;
+    font-size: 18px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+.image img{
+    display: block;
+    width: 120%;
+    height: auto;
+}
+.image{
+    width: 30%;
+    height:80%;
+    position: absolute;
+    bottom: 0;
+    right: 30px;
+
+}
